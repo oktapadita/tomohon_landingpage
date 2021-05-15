@@ -238,6 +238,10 @@ header .logo
   .text p {
     font-size: 1em;
   }
+  .subtitle {
+    color: #fff;
+    font-size: 15px;
+  }
 }
 
 /* Animations */
