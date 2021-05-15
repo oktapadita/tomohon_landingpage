@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tomohon</title>
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">The City of Tomohon</h2>
+      <h3 class="subtitle"><a href="#">IND </a><a href="#">| ENG</a><a href="#"> | TOMBULU</a></h3>
+      <div class="toggle"></div>
+    </header>
+    <video src="tomohon.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+
+    <div class="text">
+      <h3>The Beautiful City Of <span class="type"> </span></h3>
+      <p class="paragraph">Tomohon is not merely a beautiful city, but a city that's made beautiful on the parameters of good health, loving, and multi-culture.</p>
+      <a href="#">Explore</a>
+    </div>
+    
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+      <li class="copyright">OktaPadita &copy; 2021 - Video by Raja Drone ID</li>
+    </ul>
+  </section>
+
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Government</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  <script src="typed.js"></script>
+  <script>
+    var typed = new Typed('.type', {
+    strings: [
+      "",
+      "Comfort", 
+      "Smart",
+      "World known",
+      "Loving"
+    ],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+}); 
+  </script>
+  <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+    })
+  </script>
+  
+</body>
+</html>
